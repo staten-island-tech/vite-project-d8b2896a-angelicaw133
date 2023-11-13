@@ -1,3 +1,5 @@
-import "../css/style.css"
-import {countries, name} from "./sell";
-console.log(countries,name);
+import '../css/style.css'
+
+import {countries} from './sell'
+
+console.log(countries);
