@@ -1,5 +1,3 @@
-
-
 .card:hover {
   transform: scale(1.05);
 }
@@ -16,12 +14,14 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	background: #FAF9F6;
-  flex-wrap: wrap;
+ 	flex-wrap: wrap;
 }
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 img {
 	display: block;
 	width: 100%;
@@ -33,12 +33,6 @@ h2 {
   padding: 1rem;
 }
 
-@media (min-width: 50em) {
-	h2 {
-		font-size: 1.8rem;
-	}
-}
-
 .card {
 	display: flex;
 	flex-wrap: wrap;
@@ -47,21 +41,20 @@ h2 {
 	width: 100%;
 	border-radius: 0.8rem;
 	overflow: hidden;
-	border: 0.5rem solid;
+	border: 0.3rem solid;
   margin: 1rem;
 }
 
 .card img {
 	object-fit: cover;
 	flex: 1 1 300px;
-	outline: 0.5rem solid;
+	outline: 0.3rem solid;
 }
 
 .card a {
 	display: inline-block;
 	color: black;
 	padding: 0.5rem 1rem;
-	text-decoration: none;
 	background: hsl(187 75% 64%);
 	border-radius: 0.6rem;
 	font-weight: 700;
@@ -71,8 +64,6 @@ h2 {
 .card {
   padding: 5rem;
 }
-
-
 
 button {
   border-radius: 8px;
@@ -85,9 +76,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
