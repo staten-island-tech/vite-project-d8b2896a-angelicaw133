@@ -4,16 +4,17 @@ import {countries} from './sell'
 
 
 const asia = countries.filter((country) => country.continent === "Asia")
-console.log(asia);
+asia.forEach((country) => console.log(country.name));
 
 const north_america = countries.filter((country) => country.continent === "North America")
-console.log(north_america);
+north_america.forEach((country) => console.log(country.name));
 
 const south_america = countries.filter((country) => country.continent === "South America")
-console.log(south_america);
+south_america.forEach((country) => console.log(country.name));
 
 const africa = countries.filter((country) => country.continent === "Africa")
-console.log(africa);
+africa.forEach((country) => console.log(country.name));
 
 const europe = countries.filter((country) => country.continent === "Europe")
-console.log(europe);
+europe.forEach((country) => console.log(country.name));
+
