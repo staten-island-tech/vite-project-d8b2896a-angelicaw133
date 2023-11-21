@@ -1,8 +1,9 @@
+
+
 const DOMselectors = {
+    container: document.querySelector(".container"),
     card : document.querySelector(".card"),
-    card_image : document.querySelector(".cardimg"),
-    buttons : document.querySelector(".button"),
-    name : document.querySelector(".name"),
-    price : document.querySelector(".price"),
+
 }
+ 
 

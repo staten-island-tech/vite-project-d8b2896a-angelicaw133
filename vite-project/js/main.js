@@ -2,6 +2,8 @@ import '../css/style.css'
 
 import {countries} from './sell'
 
+import'../js/dom'
+
 
 const asia = countries.filter((country) => country.continent === "Asia")
 asia.forEach((country) => console.log(country.name));
@@ -18,3 +20,7 @@ africa.forEach((country) => console.log(country.name));
 const europe = countries.filter((country) => country.continent === "Europe")
 europe.forEach((country) => console.log(country.name));
 
+function insert(DOMselectors, countries){
+    countries.forEach((object) => {const card_thing = 
+    })
+}
