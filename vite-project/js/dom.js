@@ -9,7 +9,6 @@ const DOMselectors = {
     btn_so: document.querySelector(".btn_so"),
     name: document.querySelector(".name"),
     price: document.querySelector(".price"),
-    buttons: document.querySelectorAll("button")
 
 };
 export {DOMselectors}
