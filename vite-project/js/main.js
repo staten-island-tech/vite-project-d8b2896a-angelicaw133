@@ -21,22 +21,18 @@ africa.forEach((country) => console.log(country.name));
 const europe = countries.filter((country) => country.continent === "Europe")
 europe.forEach((country) => console.log(country.name));
 
-function insert(){
-    countries.forEach((object) => {const card_thing = 
-    `<div class = "container"><div class="card">
-    <h1>${object.name}</h1>
+function insert(arr){
+    arr.forEach((object) => {
+    DOMselectors.container.insertAdjacentHTML(
+    "afterend",
+    `<div class="card"><h1>${object.name}</h1>
     <img src="${object.image}" alt="">
     <h2>${object.price}</h2>
-  </div>
-  </div>`
-
-  DOMselectors.container.insertAdjacentHTML(
-    "afterend",
-    card_thing
+    </div>`
   )})};
-insert();
+insert(countries)
 
-document.btn_eu.addEventListener("click", function (event) {
+DOMselectors.btn_eu.addEventListener("click", function (event) {
     event.preventDefault();
     clear_screen();
     console.log("clicked!");
@@ -44,5 +40,10 @@ document.btn_eu.addEventListener("click", function (event) {
 
 function clear_screen(){
     const element = document.querySelector(".container");
-    element.remove();
+    element.innerHTML = ""
 };
+
+let buttons = document.querySelectorAll("button")
+buttons.forEach((btn)=> btn.addEventListener)("click", function(){
+  let thing = buttons.textContent()
+})
