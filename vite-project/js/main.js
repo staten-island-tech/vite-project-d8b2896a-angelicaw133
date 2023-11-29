@@ -6,18 +6,6 @@ import'../js/dom'
 
 import {DOMselectors} from "./dom"
 
-// const asia = countries.filter((country) => country.continent === "Asia")
-// asia.forEach((country) => console.log(country.name));
-// const north_america = countries.filter((country) => country.continent === "North America")
-// north_america.forEach((country) => console.log(country.name));
-// const south_america = countries.filter((country) => country.continent === "South America")
-// south_america.forEach((country) => console.log(country.name));
-// const africa = countries.filter((country) => country.continent === "Africa")
-// africa.forEach((country) => console.log(country.name));
-// const europe = countries.filter((country) => country.continent === "Europe")
-// europe.forEach((country) => console.log(country.name));
-
-
 function insert(arr){
     arr.forEach((object) => {
     DOMselectors.container.insertAdjacentHTML(
@@ -35,14 +23,7 @@ function clear_screen(){
     element.innerHTML = ""
 };
 
-// let buttons = document.querySelectorAll("button")
-// buttons.forEach((btn)=> btn.addEventListener ("click", function(){
-//   let thing = buttons.textContent;
-//   let newarr = countries.filter((country) => country.continent === thing )
-//   clear_screen()
-//   insert(newarr)
-//   }));
-let buttons = document.querySelectorAll("button")
+let buttons = document.querySelectorAll(".btn_eu, .btn_no, .btn_so, .btn_af, .btn_as")
 
 buttons.forEach((btn) => btn.addEventListener("click", function(){
  
@@ -56,3 +37,13 @@ DOMselectors.btn_all.addEventListener("click", function() {
   clear_screen();
   insert(countries)
 })
+
+document.querySelector(".btn_change").addEventListener("click", function(){
+  if(document.body.classList.contains("cool")){
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});

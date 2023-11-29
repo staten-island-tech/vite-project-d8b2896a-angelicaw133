@@ -1,3 +1,33 @@
+:root {
+  --blue: #1e90ff;
+  --red: #ff0000;
+  --white: #ffffff;
+  --light_blue: #add8e6;
+  --green: #08f04b;
+
+
+
+  --primary: var(--blue);
+  --secondary: var(--red);
+  --thridmary: var(--white);
+  --buttong: var(--light_blue);
+}
+
+.cool {
+  --primary: var(--blue);
+  --secondary: var(--red);
+  --thridmary: var(--white);
+  --buttong: var(--light_blue);
+}
+
+.warm {
+
+  --primary: var(--blue);
+  --secondary: var(--red);
+  --thridmary: var(--green);
+  --buttong: var(--light_blue);
+}
+
 .card:hover {
   transform: scale(1.05);
 }
@@ -9,7 +39,7 @@
 }
 
 body{
-  background: #FAF9F6;
+  background: var(--thridmary);
 }
 .container {
 	font-family: "Open Sans", sans-serif;
@@ -39,14 +69,11 @@ h2 {
 	font-size: 1.4rem;
 
 }
-h2 {
-	margin: 0;
- 
-}
+
 .card {
 	display: flex;
 	flex-wrap: wrap;
-	background: #C3B1E1;
+	background: var(--primary);
 	width: 24vw;
   max-height: 37vh;
 	border-radius: 0.8rem;
@@ -64,13 +91,13 @@ button {
   font-size: 2rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--buttong);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--secondary);
 }
 
 .container_btns {
@@ -79,15 +106,4 @@ button:hover {
   justify-content: space-evenly;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} 
+
