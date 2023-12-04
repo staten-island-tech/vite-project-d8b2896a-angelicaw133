@@ -4,6 +4,7 @@
   --white: #ffffff;
   --light_blue: #add8e6;
   --green: #08f04b;
+  --light_green: #d1ffbd;
 
 
 
@@ -14,7 +15,7 @@
 }
 
 .cool {
-  --primary: var(--blue);
+  --primary: var(--light_green);
   --secondary: var(--red);
   --thridmary: var(--white);
   --buttong: var(--light_blue);
